@@ -13,12 +13,5 @@ public class Task22 {
         for (int n:numlist) {
             System.out.println(n+" = "+ numlist.indexOf(n));
         }
-
-        numlist.remove(numlist.indexOf(9));
-        System.out.println(numlist);
-        for (int n:numlist) {
-            System.out.println(n+" = "+ numlist.indexOf(n));
-        }
-
     }
 }
