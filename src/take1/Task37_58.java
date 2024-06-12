@@ -1,9 +1,8 @@
 package take1;
 
-import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.*;
 
-public class Task37 {
+public class Task37_58 {
 
     public static void main(String[] args) {
 
@@ -100,16 +99,72 @@ public class Task37 {
 
 
 //      46. Write a Java program to remove all of the elements from a hash set.
-            HashSet<String> toempty  = new HashSet<>();
-            toempty.add("Robin");
-            toempty.add("Zoro");
-            toempty.add("Corazon");
+        HashSet<String> toempty  = new HashSet<>();
+        toempty.add("Robin");
+        toempty.add("Zoro");
+        toempty.add("Corazon");
         System.out.println(toempty);
 
         toempty.removeAll(toempty);
         System.out.println(toempty);
 
 
+
+//      47. Write a Java program to create a new tree set, add some colors (string) and print out the tree set.
+        TreeSet<String> colours = new TreeSet<>();
+        colours.add("Red");
+        colours.add("Blue");
+        colours.add("Black");
+        System.out.println("The tree set of colours is: "+colours);
+
+
+//      48. Write a Java program to iterate through all elements in a tree set.
+        System.out.println("Iterating the elements in a tree set: ");
+        Iterator<String> ite = colours.iterator();
+        while(ite.hasNext()){
+            System.out.println(ite.next());
+        }
+
+//      49. Write a Java program to add all the elements of a specified tree set to another tree set.
+        TreeSet<Integer> t1 = new TreeSet<>();
+        t1.add(10);
+        t1.add(14);
+        t1.add(20);
+        t1.add(26);
+
+        TreeSet<Integer> t2 = new TreeSet<>();
+        t2.add(100);
+        t2.add(147);
+        t2.add(203);
+        t2.add(268);
+
+        t1.addAll(t2);
+        System.out.println("Adding all the elements of a specified tree set to another tree set "+t1);
+
+
+//      50. Write a Java program to create a reverse order view of the elements contained in a given tree set.
+
+//        Ps: Doesnot modify t1
+        System.out.println("The reverse order of the tree set is: "+t1.descendingSet());
+
+//      51. Write a Java program to get the first and last elements in a tree set.
+        System.out.println("The first element of the treeset is: "+t1.first());
+        System.out.println("THE last element of the treeset is: "+t1.last());
+
+//      000. Convert the treeset to array.
+        int i = 0;
+        int[] treetoarray = new int[t1.size()];
+        for (int n : t1){
+            treetoarray[i] = n;
+            i++;
+        }
+        System.out.println("The conversion of the TreeSet to Array: "+Arrays.toString(treetoarray));
+
+//      52. Write a Java program to get the number of elements in a tree set.
+        System.out.println("Getting the number of elements in a tree set. "+t1.size());
+
+//      53. Write a Java program to compare two tree sets.
+        System.out.println("Comparison: "+t1.equals(t2));
 
 
 
