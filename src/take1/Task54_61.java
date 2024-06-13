@@ -32,54 +32,54 @@ public class Task54_61 {
             }
         }
 
-////      55.  Write a Java program to get the element in a tree set which is greater than or equal to the given element.
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Enter the element which is greater than or equal to the given element: ");
-//        int n = sc.nextInt();
-//        System.out.println("The element in a tree set which is greater than or equal to "+ n);
-//        for(int num : numtree){
-//            if(num>= n){
-//                System.out.println(num);
-//                break;
-//            }
-//        }
-//        System.out.println(numtree.ceiling(n));
-//
-////      56.  Write a Java program to get the element in a tree set which is less than or equal to the given element.
-//        System.out.println("Enter the element which is less than or equal to the given element.: ");
-//        int  ln= sc.nextInt();
-//        System.out.println("The element in a tree set which is less than or equal to "+ ln);
-//        for(int no : numtree){
-//            if(no <= ln){
-//                System.out.println(no);
-//                break;
-//            }
-//        }
-//        System.out.println(numtree.floor(n));
-//
-////      57.  Write a Java program to get the element in a tree set which is strictly greater than or equal to the given element.
-//        System.out.println("Enter the element which is strictly greater than or equal to the given element : ");
-//        int sgn = sc.nextInt();
-//        System.out.println("The element in a tree set which is strictly greater than or equal to "+ n);
-//        for(int no : numtree){
-//            if(no >  n){
-//                System.out.println(no);
-//                break;
-//            }
-//        }
-//        System.out.println(numtree.higher(n));
-//
-////      58.  Write a Java program to get the element in a tree set which is strictly lesser than or equal to the given element.
-//        System.out.println("Enter the element which is strictly lesser than or equal to the given element : ");
-//        int sln = sc.nextInt();
-//        System.out.println("The element in a tree set which is strictly lesser than or equal to "+ n);
-//        for(int no : numtree){
-//            if(no >  n){
-//                System.out.println(no);
-//                break;
-//            }
-//        }
-//        System.out.println(numtree.lower(n));
+//      55.  Write a Java program to get the element in a tree set which is greater than or equal to the given element.
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the element which is greater than or equal to the given element: ");
+        int n = sc.nextInt();
+        System.out.println("The element in a tree set which is greater than or equal to "+ n);
+        for(int num : numtree){
+            if(num>= n){
+                System.out.println(num);
+                break;
+            }
+        }
+        System.out.println(numtree.ceiling(n));
+
+//      56.  Write a Java program to get the element in a tree set which is less than or equal to the given element.
+        System.out.println("Enter the element which is less than or equal to the given element.: ");
+        int  ln= sc.nextInt();
+        System.out.println("The element in a tree set which is less than or equal to "+ ln);
+        for(int no : numtree){
+            if(no <= ln){
+                System.out.println(no);
+                break;
+            }
+        }
+        System.out.println(numtree.floor(n));
+
+//      57.  Write a Java program to get the element in a tree set which is strictly greater than or equal to the given element.
+        System.out.println("Enter the element which is strictly greater than or equal to the given element : ");
+        int sgn = sc.nextInt();
+        System.out.println("The element in a tree set which is strictly greater than or equal to "+ n);
+        for(int no : numtree){
+            if(no >  n){
+                System.out.println(no);
+                break;
+            }
+        }
+        System.out.println(numtree.higher(n));
+
+//      58.  Write a Java program to get the element in a tree set which is strictly lesser than or equal to the given element.
+        System.out.println("Enter the element which is strictly lesser than or equal to the given element : ");
+        int sln = sc.nextInt();
+        System.out.println("The element in a tree set which is strictly lesser than or equal to "+ n);
+        for(int no : numtree){
+            if(no >  n){
+                System.out.println(no);
+                break;
+            }
+        }
+        System.out.println(numtree.lower(n));
 
 //      59. Write a Java program to retrieve and remove the first element of a tree set.
         TreeSet<String> treename = new TreeSet<>();

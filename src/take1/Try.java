@@ -20,6 +20,8 @@ public class Try {
         if(remaining > 0) {
          double  floorData =    remaining/(double)100000;
             System.out.println(floorData);
+
+            System.out.println(Math.ceil(floorData));
         int numberOfLakhs = (int) Math.ceil(floorData);
         amount += numberOfLakhs*5;
         }

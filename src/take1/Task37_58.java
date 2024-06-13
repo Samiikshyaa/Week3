@@ -5,7 +5,6 @@ import java.util.*;
 public class Task37_58 {
 
     public static void main(String[] args) {
-
         HashSet<Integer> hs = new HashSet<>();
         hs.add(3);
         hs.add(67);
@@ -13,7 +12,6 @@ public class Task37_58 {
         hs.add(74);
         hs.add(79);
         hs.add(7);
-
         HashSet<String> stringset = new HashSet<>();
 
 
