@@ -76,8 +76,8 @@ public class Task74 {
 
 //       84. Write a Java program to get a set view of the keys contained in this map.
         Set<Integer> setview = new HashSet<>();
-        for (Map.Entry<Integer, String> ent : map.entrySet()) {
-            setview.add(ent.getKey());
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+            setview.add(entry.getKey());
         }
         System.out.println(setview);
 
