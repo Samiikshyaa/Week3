@@ -57,7 +57,6 @@ public class Task74 {
         }
 
 //      82.  Write a Java program to create a set view of the mappings contained in a map.
-
         Map<Integer, String> map = new HashMap<>();
         map.put(1, "Hello");
         map.put(2, "Mellow");
@@ -79,14 +78,11 @@ public class Task74 {
         Set<Integer> setview = new HashSet<>();
         for (Map.Entry<Integer, String> ent : map.entrySet()) {
             setview.add(ent.getKey());
-
         }
         System.out.println(setview);
 
-//        Write a Java program to get a collection view of the values contained in this map.
-
-        Collection<Integer> keys=map.keySet();
-        
-        System.out.println(keys);
+//      85. Write a Java program to get a collection view of the values contained in this map.
+        Collection<String> values = map.values();
+        System.out.println(values);
     }
 }

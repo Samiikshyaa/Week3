@@ -12,7 +12,7 @@ public class Task62_73PriorityQueue {
         colors.add("Green");
         colors.add("Orange");
         System.out.println(colors); //according to the internal heap structure, min heap, binary heap tree,
-        while(!colors.isEmpty()){
+        while (!colors.isEmpty()) {
             System.out.println(colors.poll());
         }
 
@@ -26,7 +26,7 @@ public class Task62_73PriorityQueue {
 
         System.out.println("Iterating through the priority queue."); // returns the value like sout("priorityQueue")
         Iterator<String> it = colors2.iterator();
-        while(it.hasNext()){
+        while (it.hasNext()) {
             System.out.println(it.next());
         }
 
@@ -46,7 +46,7 @@ public class Task62_73PriorityQueue {
 
         nameofDogs.addAll(nameofCats);
         System.out.println("Adding the names of dog and cat in the single queue");
-        while (!nameofDogs.isEmpty()){
+        while (!nameofDogs.isEmpty()) {
             System.out.println(nameofDogs.poll());
         }
 
@@ -70,7 +70,7 @@ public class Task62_73PriorityQueue {
             while (!pq.isEmpty()) {
                 System.out.println(pq.poll());
             }
-        } catch (ClassCastException e){
+        } catch (ClassCastException e) {
             System.err.println("Object cannot be cast to string:");
         }
 
@@ -83,10 +83,10 @@ public class Task62_73PriorityQueue {
 
         priorityQueue.remove("Hello");
         System.out.println("Before Removing all the elements from the priority queue: ");
-        while (!priorityQueue.isEmpty()){
+        while (!priorityQueue.isEmpty()) {
             System.out.println(priorityQueue.poll());
         }
-        System.out.println("After removing elements:  "+priorityQueue);
+        System.out.println("After removing elements:  " + priorityQueue);
 
 //      67.  Write a Java program to count the number of elements in a priority queue.
 
@@ -96,7 +96,7 @@ public class Task62_73PriorityQueue {
         priorityQueue1.add("Jello");
         priorityQueue1.add("Yellow");
 
-        System.out.println("The size of the priority queue created is: "+priorityQueue1.size());
+        System.out.println("The size of the priority queue created is: " + priorityQueue1.size());
 
 
 //      68. Write a Java program to compare two priority queues.
@@ -106,16 +106,16 @@ public class Task62_73PriorityQueue {
         priorityQueue2.add("Jello");
         priorityQueue2.add("Yellow");
 
-        System.out.println("Result of the comparison is: "+priorityQueue1.equals(priorityQueue2));
+        System.out.println("Result of the comparison is: " + priorityQueue1.equals(priorityQueue2));
 
 //       69. Write a Java program to retrieve the first element of the priority queue
-        System.out.println("The first element of the priority queue is:(without removing it) "+priorityQueue2.peek());
+        System.out.println("The first element of the priority queue is:(without removing it) " + priorityQueue2.peek());
 
 
 //       70. Write a Java program to retrieve and remove the first element of the priority queue.
-        System.out.println("The first element of the priority queue is: (retriving and removing) " +priorityQueue2.poll());
+        System.out.println("The first element of the priority queue is: (retriving and removing) " + priorityQueue2.poll());
         System.out.println("The elements after removing the first element: ");
-        while(!priorityQueue2.isEmpty()) {
+        while (!priorityQueue2.isEmpty()) {
             System.out.println(priorityQueue2.poll());
         }
 
@@ -135,7 +135,7 @@ public class Task62_73PriorityQueue {
             array[j] = priorityQueueForArray.poll();
         }
 
-        System.out.println("The array is: "+Arrays.toString(array));
+        System.out.println("The array is: " + Arrays.toString(array));
 
 
 //     72.   Write a Java program to convert Priority Queue elements to a string representation.
@@ -146,9 +146,9 @@ public class Task62_73PriorityQueue {
         integers.add(45);
 
         StringBuilder sb = new StringBuilder();
-        while (!integers.isEmpty()){
+        while (!integers.isEmpty()) {
             sb.append(integers.poll());
-            if(!integers.isEmpty()){
+            if (!integers.isEmpty()) {
                 sb.append(" , ");
             }
         }
@@ -172,36 +172,36 @@ public class Task62_73PriorityQueue {
 
 //        73. Write a Java program to change priorityQueue to maximum priority queue.
 
-            PriorityQueue<String> colorful = new PriorityQueue<>();
-            colorful.add("Red");
-            colorful.add("Blue");
-            colorful.add("Black");
-            colorful.add("Green");
-            int i =0;
-            String[] colorarray = new String[colorful.size()];
-            while (!colorful.isEmpty()){
-                colorarray[i] = colorful.poll();
-                i++;
-            }
+        PriorityQueue<String> colorful = new PriorityQueue<>();
+        colorful.add("Red");
+        colorful.add("Blue");
+        colorful.add("Black");
+        colorful.add("Green");
+        int i = 0;
+        String[] colorarray = new String[colorful.size()];
+        while (!colorful.isEmpty()) {
+            colorarray[i] = colorful.poll();
+            i++;
+        }
 //            System.out.println(Arrays.toString(colorarray));
 
         System.out.println("\nMaximum priority Queue");
-        for (int j = colorarray.length-1; j >= 0; j--) {
+        for (int j = colorarray.length - 1; j >= 0; j--) {
             System.out.println(colorarray[j]);
         }
 
-            //using predefined way.
+        //using predefined way.
         System.out.println("Using Collections.========");
-            PriorityQueue<String> ps = new PriorityQueue<>(Collections.reverseOrder());
-            ps.add("Red");
-            ps.add("Blue");
-            ps.add("Green");
-            ps.add("Black");
-            ps.add("Green");
+        PriorityQueue<String> ps = new PriorityQueue<>(Collections.reverseOrder());
+        ps.add("Red");
+        ps.add("Blue");
+        ps.add("Green");
+        ps.add("Black");
+        ps.add("Green");
 
-            while (!ps.isEmpty()){
-                System.out.println(ps.poll());
-            }
+        while (!ps.isEmpty()) {
+            System.out.println(ps.poll());
+        }
 
     }
 }
