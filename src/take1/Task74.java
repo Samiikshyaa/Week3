@@ -85,14 +85,5 @@ public class Task74 {
         Collection<String> values = map.values();
         System.out.println(values);
 
-//      86.  Write a Java program to associate the specified value with the specified key in a Tree Map.
-        Map<Integer,String> treemap = new TreeMap<>();
-        treemap.put(1, "Banana");
-        treemap.put(2, "Apple");
-        treemap.put(3, "Chocolate");
-        treemap.put(4, "Donuts");
-        System.out.println(treemap);
-
-
     }
 }
