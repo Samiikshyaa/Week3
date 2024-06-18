@@ -59,7 +59,9 @@ public class Task86 {
         treemap.clear();
         System.out.println(treemap);
 
-//      93.  Write a Java program to sort keys in Treemap by using comparator
+
+
+
 
 
     }
