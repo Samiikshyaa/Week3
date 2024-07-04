@@ -15,6 +15,6 @@ public class ListToArray1 {
         for (int i = 0; i < namelist.size(); i++) {
             nlist[i] = namelist.get(i);
         }
-        System.out.println("The array is: "+Arrays.toString(nlist));
+        System.out.println("The array is : "+Arrays.toString(nlist));
     }
 }
