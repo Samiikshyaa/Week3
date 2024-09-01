@@ -12,6 +12,7 @@ public class Task12 {
 
         System.out.println(slist);
         slist.removeAll(slist);
+//        slist.clear();
         System.out.println(slist);
     }
 }

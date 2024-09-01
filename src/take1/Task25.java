@@ -31,7 +31,8 @@ public class Task25 {
         }
         System.out.println("The added new list is: "+newlist);
 
-        numlist1.addAll(numlist1.size(),numlist2);
+//        numlist1.addAll(numlist1.size(),numlist2);
+        numlist1.addAll(numlist2);
         System.out.println("The result after joining the two linked lists is: "+numlist1);
 
     }

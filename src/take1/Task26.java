@@ -1,6 +1,7 @@
 package take1;
 
 import java.util.LinkedList;
+import java.util.List;
 
 public class Task26 {
 //    Write a Java program to clone an linked list to another linked list.
@@ -24,5 +25,9 @@ public class Task26 {
 
         LinkedList<Integer> builtin = (LinkedList<Integer>) numlist1.clone();
         System.out.println("By using built in method: "+builtin);
+
+        List<Integer> newList = new LinkedList<>();
+        newList = (LinkedList<Integer>)numlist1.clone();
+        System.out.println(newList);
     }
 }

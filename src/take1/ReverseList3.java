@@ -1,9 +1,6 @@
 package take1;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class ReverseList3 {
     public static void main(String[] args) {
@@ -20,6 +17,11 @@ public class ReverseList3 {
         //sout using the predefined method.
         Collections.reverse(slist);
         System.out.println(slist);
+
+//        Iterator<String> iterator = slist.iterator();
+//        while (iterator.hasNext()){
+//            System.out.println(iterator.next());
+//        }
 
     }
 }

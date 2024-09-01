@@ -15,6 +15,7 @@ public class Task19_20 {
         System.out.println(numlist);
 
         numlist.add(3,4);
+        numlist.set(4,100);
         System.out.println(numlist);
 
         List<Integer> arr = new ArrayList<>();

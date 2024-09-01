@@ -17,8 +17,6 @@ public class ArrayToList1 {
             slist2.add(s[i]);
         }
         System.out.println(slist2);
-
-
     }
 }
 
