@@ -22,7 +22,7 @@ public class Task54_61 {
                 System.out.println(n);
             }
         }
-
+//        numtree.stream().filter(y -> y<7).forEach(y -> System.out.println(y));
         System.out.println("(with iterator)");
         Iterator<Integer> iter = numtree.iterator();
         while(iter.hasNext()){

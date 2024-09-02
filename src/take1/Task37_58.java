@@ -56,12 +56,12 @@ public class Task37_58 {
 
 
 //      43.  Write a Java program to convert a hash set to a List/ArrayList.
-        List<Integer> al = new ArrayList<>();
-        for (int s : h) {
-            al.add(s);
-        }
+        List<Integer> al = new ArrayList<>(h);
+//        for (int s : h) {
+//            al.add(s);
+//        }
 
-        System.out.println("The array list is: "+al);
+        System.out.println("THISSSSSS The array list is: "+al);
 
 
 //      44. Write a Java program to compare two hash set.

@@ -20,7 +20,7 @@ public class Task74 {
         System.out.println("The size of the map created is: " + hmap.size());
 
 
-//        76. Write a Java program to copy all of the mappings from the specified map to another map.
+//        76. Write a Java program to copy all the mappings from the specified map to another map.
         HashMap<Integer, String> hmapCopy = new HashMap<>();
         hmapCopy.putAll(hmap);
         System.out.println("The copy of the hashmap using putall: " + hmapCopy);
@@ -63,6 +63,7 @@ public class Task74 {
         map.put(3, "Jello");
         map.put(4, "Yellow");
         map.put(5, "Kello");
+
         Set<Map.Entry<Integer, String>> mapSet = new HashSet<>();
         for (Map.Entry<Integer, String> mapentry : map.entrySet()) {
             mapSet.add(mapentry);

@@ -81,6 +81,13 @@ public class Task62_73PriorityQueue {
         priorityQueue.add("Hello");
         priorityQueue.add("ello");
 
+
+
+//        System.out.println("================="+priorityQueue);
+//        System.out.println("lalalalala"+priorityQueue.peek());
+//        System.out.println("================="+priorityQueue);
+
+
         priorityQueue.remove("Hello");
         System.out.println("Before Removing all the elements from the priority queue: ");
         while (!priorityQueue.isEmpty()) {
@@ -120,7 +127,7 @@ public class Task62_73PriorityQueue {
         }
 
 
-//       71. Write a Java program to convert a priority queue to an array containing all of the elements of the queue.
+//       71. Write a Java program to convert a priority queue to an array containing all the elements of the queue.
 
         PriorityQueue<String> priorityQueueForArray = new PriorityQueue<>();
         priorityQueueForArray.add("Ello");
@@ -134,6 +141,7 @@ public class Task62_73PriorityQueue {
         for (int j = 0; j < array.length; j++) {
             array[j] = priorityQueueForArray.poll();
         }
+
 
         System.out.println("The array is: " + Arrays.toString(array));
 
@@ -177,6 +185,7 @@ public class Task62_73PriorityQueue {
         colorful.add("Blue");
         colorful.add("Black");
         colorful.add("Green");
+
         int i = 0;
         String[] colorarray = new String[colorful.size()];
         while (!colorful.isEmpty()) {
