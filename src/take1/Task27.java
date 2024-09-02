@@ -1,6 +1,6 @@
 package take1;
 
-import java.util.LinkedList;
+import java.util.*;
 
 public class Task27 {
 //    Write a Java program to remove and return the first element of a linked list.
@@ -15,5 +15,13 @@ public class Task27 {
 
         System.out.println("The removed first element of the linked list is: "+ numlist.remove(0));
         System.out.println("The linked list after removing: "+numlist);
+
+
+        Integer[] array = numlist.toArray(numlist.toArray(new Integer[0]));//to array
+        System.out.println(Arrays.toString(array));
+//        ArrayList<Integer> variant = (ArrayList<Integer>)numlist.clone(); //cloning
+
+        ArrayList<Integer> newList = new ArrayList<>(numlist); //converting into arraylist
+        Set<Integer> newSet = new TreeSet<>(numlist);
     }
 }
